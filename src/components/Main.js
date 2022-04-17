@@ -15,18 +15,34 @@ import Shoe8 from "../img/shoe8.png"
 const SectionBanner = styled.section`
   background-repeat: no-repeat;
   background-size: 100%;
-  height: 50vh;
+  height: 530px;
   background-image: url(${Banner});
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  @media(max-width: 1000px){
+    justify-content: start;
+  }
+  @media(max-width: 768px){
+    height: 400px;
+  }
 `
 const Title = styled.h1`
+  margin-top: 10vw;
   margin-left: 7vw;
   color: #F9F9F9;
   font-size: 4.5vh;
   font-weight: 700;
+  @media(max-width: 1000px){
+    margin-top: 70px;
+  }
+  @media(max-width: 768px){
+    font-size: 3.5vh;
+  }
+  @media(max-width: 480px){
+    margin-top: 5vw;
+    font-size: 3vh;
+  }
 `
 const Text = styled.p`
   margin-left: 7vw;
@@ -34,10 +50,23 @@ const Text = styled.p`
   color: #F9F9F9;
   font-size: 2vh;
   font-weight: 600;
-  width: 23vw;
+  width: 35vw;
+  @media(max-width: 1000px){
+    width: 55vw;
+    margin-top: 5px;
+  }
+  @media(max-width: 768px){
+    font-size: 1.5vh;
+  }
+  @media(max-width: 480px){
+    font-size: 1.3vh;
+  }
 `
 const Spotlight = styled.section`
   margin: 50px 7vw 0 7vw;
+  @media(max-width: 768px){
+    margin-top: 0;
+  }
 `
 const SubTitle = styled.h2`
   color: #181818;
